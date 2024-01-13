@@ -27,9 +27,9 @@ export const Navbar = () => {
                 </Link>
             </div>
             <div className="flex items-center gap-x-3">
-                <Button size="sm" variant="premium">
+                <Button size="sm" variant="premium" className="dark:text-white text-black">
                     Upgrade
-                    <Sparkles className="w-4 h-4 fill-white text-white ml-2" />
+                    <Sparkles className="w-4 h-4 dark:text-white text-black ml-2" />
                 </Button>
                 <ModeToggle />
                 <UserButton />
