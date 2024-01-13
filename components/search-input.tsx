@@ -3,8 +3,8 @@
 import { Search } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { useRouter, useSearchParams } from "next/navigation";
-import { useDebounce } from "@/hooks/use-debounce";
 import { useState, ChangeEventHandler, useEffect } from "react";
+import { useDebounce } from "@/hook/use-debounce";
 import qs from "query-string";
 
 
