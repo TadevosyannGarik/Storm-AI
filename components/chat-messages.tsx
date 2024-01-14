@@ -8,7 +8,7 @@ import { ChatMessage, ChatMessageProps } from "@/components/chat-message";
 interface ChatMessagesProps {
     messages: ChatMessageProps[];
     isLoading: boolean;
-    companion: Companion;
+    companion: Companion
 }
 
 export const ChatMessages = ({ messages = [], isLoading, companion }: ChatMessagesProps) => {
