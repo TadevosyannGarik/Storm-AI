@@ -10,10 +10,16 @@ interface CompanionIdPageProps {
 };
 
 const CompanionIdPage = async ({ params }: CompanionIdPageProps) => {
+    const { userId } = auth();
+
+    if (!userId) {
+        return redirectToSignIn();
+    }
 
     const companion = await prismadb.companion.findUnique({
         where: {
             id: params.companionId,
+            userId,
         }
     });
 

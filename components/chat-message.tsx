@@ -3,12 +3,12 @@
 import { BeatLoader } from "react-spinners";
 import { Copy } from "lucide-react";
 import { useTheme } from "next-themes";
-
 import { cn } from "@/lib/utils";
 import { BotAvatar } from "@/components/bot-avatar"
 import { UserAvatar } from "@/components/user-avatar";
 import { Button } from "@/components/ui/button";
 import { useToast } from "@/components/ui/use-toast";
+
 
 export interface ChatMessageProps {
     role: "system" | "user",
